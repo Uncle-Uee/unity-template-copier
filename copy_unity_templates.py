@@ -24,8 +24,9 @@ def copy_script_templates():
     # Copy your Script Templates to each ScriptTemplate Path for each Unity Version
     print("Copying Start.\n")
     for target_directory in unity_script_templates_paths:
+        print(f"Copying To {target_directory}")
         for my_template_file in my_templates:
-            print(f"Copying {my_template_file} to {target_directory}")
+            print(f"Copying {my_template_file}")
             shutil.copy(my_template_file, target_directory)
         print()
     print("Copying Complete.")
