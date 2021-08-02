@@ -1,0 +1,1 @@
+pyinstaller --onefile --console --icon=data_copy.ico .\copy_unity_templates.py
