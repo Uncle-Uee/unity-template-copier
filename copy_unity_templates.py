@@ -1,9 +1,9 @@
 import os
 import shutil
+
 import yaml
 
 my_script_templates_path = "ScriptTemplates"  # Put all your script templates in this folder
-
 unity_script_templates_path = "Editor\\Data\\Resources\\ScriptTemplates"  # Do Not Edit
 
 
@@ -22,11 +22,13 @@ def copy_script_templates():
     my_templates = [os.path.join(my_script_templates_path, script_template) for script_template in os.listdir(my_script_templates_path)]
 
     # Copy your Script Templates to each ScriptTemplate Path for each Unity Version
-    print("Copying Start.\n")
+    print("Copying Starting.")
     for target_directory in unity_script_templates_paths:
-        print(f"Copying To {target_directory}")
         for my_template_file in my_templates:
-            print(f"Copying {my_template_file}")
+            if not os.path.exists(target_directory):  # Check if target_directory is valid path
+                print(f"Invalid Target Directory : \n{target_directory}")
+                break
+            print(f"\nCopying : \n{my_template_file} to \n{target_directory}")
             shutil.copy(my_template_file, target_directory)
         print()
     print("Copying Complete.")
