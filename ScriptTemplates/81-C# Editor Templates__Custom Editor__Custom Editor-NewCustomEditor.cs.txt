@@ -22,6 +22,11 @@ using UnityEditor;
         	// _target = target as #SCRIPTNAME#;
         }
 
+        public override void OnInspectorGUI()
+        {
+            DrawDefaultInspector();
+        }
+
         #endregion
 
         #region METHODS
