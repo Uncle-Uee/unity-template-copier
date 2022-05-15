@@ -29,7 +29,10 @@ def copy_script_templates():
                 print(f"Invalid Target Directory : \n{target_directory}")
                 break
             print(f"\nCopying : \n{my_template_file} to \n{target_directory}")
-            shutil.copy(my_template_file, target_directory)
+            try:
+                shutil.copy2(my_template_file, target_directory)
+            except PermissionError:
+                print("Permissions Error")
         print()
     print("Copying Complete.")
     os.system("pause")
