@@ -21,7 +21,7 @@ using UnityEditor;
 
         #endregion
 
-        #region VARIABLES
+        #region FIELDS
         #endregion
 
         #region UNITY METHODS

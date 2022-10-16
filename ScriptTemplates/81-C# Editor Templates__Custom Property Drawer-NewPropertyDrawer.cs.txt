@@ -9,7 +9,7 @@ using UnityEditor;
     // [CustomPropertyDrawer(typeof())]
     public class #SCRIPTNAME# : PropertyDrawer
     {
-        #region VARIABLES
+        #region FIELDS
         #endregion
 
         #region UNITY METHODS

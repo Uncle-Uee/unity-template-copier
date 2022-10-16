@@ -9,7 +9,7 @@ using UnityEditor;
     // [CustomEditor(typeof(#SCRIPTNAME#))]
     public class #SCRIPTNAME# : Editor
     {
-        #region VARIABLES
+        #region FIELDS
 
         // private #SCRIPTNAME# _target;
 

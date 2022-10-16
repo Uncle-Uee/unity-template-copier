@@ -1,15 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 #ROOTNAMESPACEBEGIN#
-    public abstract class #SCRIPTNAME# : MonoBehaviour
+    [Serializable]
+    public struct #SCRIPTNAME#
     {
-        #region VARIABLES
-        #endregion
-
-        #region UNITY METHODS
+        #region FIELDS
         #endregion
 
         #region METHODS

@@ -5,7 +5,7 @@ using UnityEngine;
 #ROOTNAMESPACEBEGIN#
     public class #SCRIPTNAME# : MonoBehaviour
     {
-        #region VARIABLES
+        #region FIELDS
         #endregion
 
         #region UNITY METHODS

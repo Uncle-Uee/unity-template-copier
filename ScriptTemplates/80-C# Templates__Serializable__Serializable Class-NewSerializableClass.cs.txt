@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 #ROOTNAMESPACEBEGIN#
     [Serializable]
-    public struct #SCRIPTNAME#
+    public class #SCRIPTNAME#
     {
-        #region VARIABLES
+        #region FIELDS
         #endregion
 
         #region METHODS
